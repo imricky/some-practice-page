@@ -1,0 +1,287 @@
+<!--
+ * Created by Ricky on 17/2/22.
+ * Date:二月
+ * Project Name: 淘宝页面.
+ * Package Name: .
+ * ©2016-2017 Ricky. All Rights Reserved.
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>淘宝网-淘！我喜欢</title>
+		<link href="tb.css" rel="stylesheet" type="text/css"/>
+		<script type="text/javascript" src="tb.js"></script>
+	</head>
+	
+	<body>
+		<div id="nav">
+			<div id="nav-content">
+				<ul id="nav-left" class="heng nav-li">
+					<li class="hover-orange">yandol</li>
+					<li><img src="image/icon1/arrow.png"></li>
+					<li class="nav-lfmar"><img src="image/icon1/news.png"></li>
+					<li class="hover-orange">消息</li>
+					<li><img src="image/icon1/arrow.png"></li>
+					<li class="nav-lfmar hover-orange">手机逛淘宝</li>
+				</ul>
+				<ul id="nav-right" class="heng nav-li">
+					<li class="hover-orange">我的淘宝</li>
+					<li><img src="image/icon1/arrow.png"></li>
+					<li class="nav-lfmar"><img src="image/icon1/gouwuche.png"></li>
+					<li class="hover-orange">购物车</li>
+					<li><img src="image/icon1/arrow.png"></li>
+					<li class="nav-lfmar"><img src="image/icon1/shoucang.png"></li>
+					<li class="hover-orange">收藏夹</li>
+					<li><img src="image/icon1/arrow.png"></li>
+					<li class="nav-lfmar hover-orange" style="margin-right:15px;">商品分类</li>
+					<li id="str-line-hui">|</li>
+					<li class="nav-lfmar hover-orange">卖家中心</li>
+					<li><img src="image/icon1/arrow.png"></li>
+					<li class="nav-lfmar hover-orange">联系客服</li>
+					<li><img src="image/icon1/arrow.png"></li>
+					<li class="nav-lfmar"><img src="image/icon1/guide.png"></li>
+					<li class="hover-orange">网站导航</li>
+					<li><img src="image/icon1/arrow.png"></li>
+				</ul>
+			</div>
+		</div>
+		<div id="nav-img"><img src="image/navimg.png"></div>
+		
+		<div id="content">
+			<div class="logo">
+				<a href="index.html"><img src="image/tblogo.gif"></a>
+			</div>
+			<div id="top-search">
+
+				<div class="search-area">
+					<div id="search-type">
+						<ul class="heng choose">
+							<li>
+								<input type="radio" name="radio-set" checked="checked" id="baby" onclick="change2baby();"> 
+								<div id="baby-txt">宝贝</div> 
+							</li>
+							
+							<li>
+								<input type="radio" name="radio-set" id="tmail" onclick="change2tmail();"> 
+								<div id="tmail-txt">天猫 </div> 
+							</li>
+							<li>
+								<input type="radio" name="radio-set" id="store" onclick="change2store();"> 
+								<div id="store-txt">店铺 </div> 
+							</li>
+						</ul>
+					</div>
+					<div id="search-main">
+						<input value="       必败双11单品" id="search-input"/>
+						<img id="search-icon" src="image/icon1/search.png">
+						<button id="search-bt"><span></span></button>
+						<div id="search-txt">搜索</div>
+						<img id="icon-camera" onMouseOver="camera2orange();" onMouseOut="camera2hui()" src="image/icon1/camera.png">
+						<a href="https://list.taobao.com/browse/ad_search.htm?spm=a21bo.7724922.8452.1.gFu773">高级搜索</a>
+						
+					</div>
+					<div id="keyword">
+						<ul class="heng category">
+							<li class="color-orange" id="lyu">夏季新款连衣裙</li>
+							<li>手机</li>
+							<li>潮流T恤</li>
+							<li class="color-orange" id="pad">平板电脑</li>
+							<li>手机</li>
+							<li>时尚连衣裙</li>
+							<li>男鞋</li>
+							<li>新款女鞋</li>
+							<li class="color-orange" id="my"> 毛呢外套</li>
+							<li>短靴</li>
+							<li>男士外套</li>
+							<li>沙发</li>
+							<li>羽绒服</li>
+						</ul>
+						<a id="search-more" href="https://top.taobao.com/?spm=a1z5i.1.2.1.hUTg2J&topId=HOME">更多<img src="image/icon1/arrow-right-hui.png"></a>
+					</div>
+				</div>
+			</div>
+			<img id="ewm-cha" onclick="delete_ewm();" src="image/icon1/cha.png">
+			<div id="right">
+				<a href="http://www.taobao.com/m?spm=a21bo.7724922.8454.1.gFu773"><img id="tb-ewm" src="image/ewm.png"></a>
+			</div>
+
+			<div id="special-sevice">
+				<h4 id="special-sevice-title">淘宝特色服务</h4>
+				<dl id="special-service-content">
+					<dt>
+						<p class="special-service-subtitle"><img src="image/icon1/theme.png">主题市场</p>
+					</dt>
+					<dd class="special-serve-block" id="theme-mail">
+						<div><span>女装</span> <span>男装</span> <span>鞋靴</span> <span>箱包</span><img src="image/icon1/arrow-right.png"></div>
+						<div><span>婴童</span> <span>美装</span> <span>食品</span> <span>珠宝</span><img src="image/icon1/arrow-right.png"></div>
+						<div><span>装修</span> <span>建材</span> <span>家居</span> <span>百货</span><img src="image/icon1/arrow-right.png"></div>
+						<div><span>汽车</span> <span>数码</span> <span>家电</span> <span>游戏</span><img src="image/icon1/arrow-right.png"></div>
+						<div><span>生活</span> <span>学习</span> <span>房产</span> <span>结婚</span><img src="image/icon1/arrow-right.png"></div>
+						<div><span>运动</span> <span>户外</span> <span>娱乐</span> <span>花鸟</span><img src="image/icon1/arrow-right.png"></div>
+					</dd>
+					<dt><p class="special-service-subtitle"><img src="image/icon1/special.png">特色购物</p></dt>
+					<dd class="special-serve-block" id="special-shopping">
+						<div><span class="fourchar">淘宝女人</span> <span class="fourchar">淘宝男人</span> <span>中老年</span></div>
+						<div><span class="fourchar">闲鱼</span>     <span class="fourchar">拍卖会</span>   <span>全球购</span></div>
+						<div><span class="fourchar">批发量贩</span> <span class="fourchar">淘宝众筹</span> <span>爱逛街</span></div>
+						<div><span class="fourchar">中国质造</span> <span class="fourchar">淘女郎</span>   <span>企业购</span></div>
+					</dd>			
+					<dt><p class="special-service-subtitle"><img src="image/icon1/discount.png">优惠促销</p></dt>
+					<dd class="special-serve-block" id="discount">
+						<div><span class="fourchar">天天特价</span> <span class="threechar">试用</span>   <span>清仓</span></div>
+						<div><span class="fourchar">一元起拍</span> <span class="threechar">淘金币</span> <span>抢新</span></div>
+						<div><span class="fourchar">淘特莱斯</span> <span class="threechar">本地团</span> <span>挑食</span></div>
+					</dd>
+					<hr />
+					<dd class="special-serve-block" id="special-bottom">
+						<span class="fourchar">阿里旺旺</span> <span class="threechar">支付宝</span> <span>来往</span>
+					</dd>				
+				</dl>
+			</div>
+
+			<div id="ad-title">
+				<div id="at-txt">
+					<ul id="at-left" class="heng">
+						<li><a href="https://www.tmall.com/" class="color-orange">天猫</a></li>
+						<li><a href="https://ju.taobao.com/" class="color-orange">聚划算</a></li>
+						<li><a href="https://chaoshi.tmall.com/" class="color-orange">超市</a></li>
+						<li><a href="https://headline.taobao.com/" class="color-orange">头条</a></li>
+					</ul>
+					<ul id="at-right" class="heng">
+						<li class="color-orange">|</li>
+						<li><a href="https://www.alitrip.com/" class="color-68">阿里旅行</a></li>
+						<li><a href="https://qiang.taobao.com/" class="color-68">淘抢购</a></li>
+						<li><a href="https://sf.taobao.com/" class="color-68">司法拍卖</a></li>
+						<li><a href="http://www.etao.com/" class="color-68">一淘</a></li>
+						<li><a href="http://3c.tmall.com/" class="color-68">电器城</a></li>
+						<li><a href="http://www.hitao.com/" class="color-68">美妆闪购</a></li>
+						<li><a href="https://www.tmall.com/" class="color-68">阿里小智</a></li>
+						<li><a href="https://china.taobao.com/" class="color-68">特色中国</a></li>						
+					</ul>
+				</div>
+			</div>
+
+			<div id="ad-content">
+				<img id="big-ad" style="margin-bottom:1px;" src="image/bigad0.jpg">
+				<img style="margin-bottom:1px;" src="image/bigad-right.jpg">
+				<div id="adcon-bdsilde" style="margin-top:-25px;width:520px;text-align:center;opacity:0.6;">
+					<input type="radio" name="radio-ad" checked="checked" onchange="change2bigad0()">
+					<input type="radio" name="radio-ad" onchange="change2bigad1()"> 
+					<input type="radio" name="radio-ad" onchange="change2bigad2()"> 
+					<input type="radio" name="radio-ad" onchange="change2bigad3()"> 
+					<input type="radio" name="radio-ad" onchange="change2bigad4()"> 
+				</div>
+				<div style="margin-top:7px;">
+					<img src="image/smallad1.png">
+					<img class="small-ad" src="image/smallad2.png">
+					<img class="small-ad" src="image/smallad3.png">
+					<img class="small-ad" src="image/smallad4.png">
+					<img class="small-ad1" src="image/smalladRight.jpg">							
+				</div>			
+
+			</div>
+
+			<div id="account">
+				<div id="act-top">
+					<div id="actop-cate">
+						<ul class="heng" id="actop-catetxt">
+							<li id="actop-notice" style="border-bottom:0;" onmouseover="change2notice()">公告</li>
+							<li id="actop-rule" onmouseover="change2rule()">规则</li>
+							<li id="actop-bbs" onmouseover="change2bbs()">论坛</li>
+							<li id="actop-safety" onmouseover="change2safety()">安全</li>
+							<li id="actop-benefit" onmouseover="change2benefit()">公益</li>
+						</ul>
+					</div>
+					<div id="actop-cont">
+						<p class="color-orange" id="actop-cont-1">纽交所将在水立方为双11举行远程开市敲钟仪式</p>
+						<p id="actop-cont-2">天猫iPhone6s再次降价 若买到假货退全款赔4倍</p>							
+					</div>				
+				</div>
+				<div id="act-member">
+					<div id="actm-img">
+						<img src="image/headportrait1.png">
+					</div>
+					<div id="actm-txt">
+						<p>Hi!yandol</p>
+						<img style="float:left;margin-right:5px;" src="image/icon1/tbmoney.png">
+						<p><span class="color-orange">领淘金币抵钱</span> 或去 <span class="color-orange">会员俱乐部</span></p>			
+					</div>
+					<div id="act-button">
+						<button style="width:95px;">&nbsp&nbsp&nbsp&nbsp登录</button>
+						<img style="float:left;margin-left:-75px;margin-top:6px;" src="image/icon1/log-in.png">
+						<button>免费注册</button>
+						<button>免费开店</button>						
+					</div>
+				</div>
+				<div id="act-hdl">
+					<img style="margin-top:15px;margin-left:5px;" src="image/icon1/headline.png">
+					<p>	
+						<span id="hdl-tip" class="color-orange">[热门]</span>
+						<span id="hdl-cont">MUJU风格家居，一种生活的哲学</span>
+					</p>
+				</div>
+				<div id="act-life">
+					<div id="icon-mobile">
+						<img src="image/icon2/mobile1.png">
+						<p>充话费</p>
+					</div>
+					<div class="small-icon">
+						<img src="image/icon2/game.png">
+						<p>游戏</p>
+					</div>
+					<div class="small-icon">
+						<img src="image/icon2/travel.png">
+						<p>旅行</p>
+					</div>	
+					<div class="small-icon">
+						<img src="image/icon2/secure.png">
+						<p>保险</p>
+					</div>	
+					<div class="small-icon">
+						<img src="image/icon2/lottery.png">
+						<p>彩票</p>
+					</div>
+					<div class="small-icon">
+						<img src="image/icon2/film.png">
+						<p>电影</p>
+					</div>	
+					<div class="small-icon">
+						<img src="image/icon2/take-out.png">
+						<p>点外卖</p>
+					</div>	
+					<div class="small-icon" style="border-left: 1px solid rgb(234,234,234);">
+						<img src="image/icon2/pig.png">
+						<p>理财</p>
+					</div>	
+					<div class="small-icon">
+						<img src="image/icon2/man.png">
+						<p>找服务</p>
+					</div>	
+					<div class="small-icon">
+						<img src="image/icon2/music.png">
+						<p>音乐</p>
+					</div>	
+					<div class="small-icon">
+						<img src="image/icon2/water.png">
+						<p>水电煤</p>
+					</div>	
+					<div class="small-icon">
+						<img src="image/icon2/train.png">
+						<p>火车票</p>
+					</div>							
+				</div>
+
+
+			</div>
+			
+
+		</div>
+	
+	</body>
+
+
+
+
+</html>
